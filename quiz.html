@@ -1,0 +1,161 @@
+<html>
+<head>
+      <title>Quiz</title>
+	  <link rel= "stylesheet" href="style.css">
+</head>
+
+<body>
+<style>
+body {
+  background-image: url('img/quizf.jpg');
+}
+</style>
+<br>
+<section id="nav-bar">
+	  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+   <a class="navbar-header" href="#"><h1>Ce stii despre EV?</h1></a>
+  </nav>
+  </section>
+ 
+
+
+<br><br>
+   
+<section id="quiz">
+<h2>1.Ce este o mașină electrică?</h2><br>
+<input type="radio" name="question 1" id="correct1">O mașină care funcționează pe baza unui motor electric<br>
+<input type="radio" name="question 1">O mașină ultra performantă<br>
+<input type="radio" name="question 1">Mașină de jucărie<br>
+<input type="radio" name="question 1">O mașină care are comenzi electrice<br>
+<br>
+
+
+<h2>2. Ce este motorul electric?</h2><br>
+<input type="radio" name="question 2">O baterie<br>
+<input type="radio" name="question 2" id="correct2">Un dispozitiv care transformă energia electrică în energie mecanică<br>
+<input type="radio" name="question 2">Un motor care produce energie electrică<br>
+<input type="radio" name="question 2">Un motor mai "puturos" și mai ieftin<br>
+<br>
+
+
+<h2>3. Un vehicul hibrid este...</h2><br>
+<input type="radio" name="question 3">O mașină de spălat<br>
+<input type="radio" name="question 3">O idee care va putea fi posibilă doar în viitor<br>
+<input type="radio" name="question 3">Un vehicul cu motor gsl<br>
+<input type="radio" name="question 3" id="correct3">Un autoturism care are atât un motor cu ardere internă cât și unul electric<br>
+<br>
+
+<h2>4. Un e.v.</h2><br>
+<input type="radio" name="question 4">are o întreținere costisitoare<br>
+<input type="radio" name="question 4">e un vehicul de lux<br>
+<input type="radio" name="question 4">costă mai puțin decât restul vehiculelor<br>
+<input type="radio" name="question 4" id="correct4">are un preț mai ridicat la cumpărare, dar întreținerea costă puțin<br>
+<br>
+
+<h2>5. Mașinile cu motor electric</h2><br>
+<input type="radio" name="question 5">sunt un moft<br>
+<input type="radio" name="question 5" id="correct5">sunt eco friendly<br>
+<input type="radio" name="question 5">sunt inaccesibile pentru public<br>
+<input type="radio" name="question 5" >sunt o sursă a poluării<br>
+<br>
+
+<h2>6. Un vehicul electric se poate încărca</h2><br>
+<input type="radio" name="question 6">doar la stațiile special amenajate în benzinării<br>
+<input type="radio" name="question 6">la orice priză<br>
+<input type="radio" name="question 6" id="correct6">la o stație amenajată acasă sau la o stație publică de încărcare<br>
+<input type="radio" name="question 6">doar acasă<br>
+<br>
+
+<h2>7. Curentul pentru un traseu costă </h2><br>
+<input type="radio" name="question 7">mult mai mult decât celelalte tipuri de combustibil <br>
+<input type="radio" name="question 7">de 2 ori cât benzina<br>
+<input type="radio" name="question 7" id="correct7">mai puțin decât celelalte tipuri de combustibil<br>
+<input type="radio" name="question 7">mai puțin decât benzina, dar mai mult motorina<br>
+<br>
+
+<h2>8. Compania care produce exclusiv mașini electrice este  </h2><br>
+<input type="radio" name="question 8" id="correct8">Tesla<br>
+<input type="radio" name="question 8">Lamborghini<br>
+<input type="radio" name="question 8">Alfa Romeo<br>
+<input type="radio" name="question 8">Lancia<br>
+<br>
+
+<h2>9. Un e.v. se poate folosi  </h2><br>
+<input type="radio" name="question 9">doar în oraș<br>
+<input type="radio" name="question 9">doar în condiții speciale<br>
+<input type="radio" name="question 9">cu un permis de conducere special<br>
+<input type="radio" name="question 9" id="correct9">ca oricare altă mașină<br>
+<br>
+
+<h2>10.Se poate conduce și încărca o mașină cu motor electic în ploaie? </h2><br>
+<input type="radio" name="question 10">Nu, deoarece s-ar deteriora<br>
+<input type="radio" name="question 10">Doar conduce<br>
+<input type="radio" name="question 10" id="correct10">Da<br>
+<input type="radio" name="question 10">doar încărca<br>
+<br>
+
+<input type="submit" name"submit" value="submit Quiz" onclick="result()">
+
+<script type="text/javascript">
+    function result()
+	    {//body...
+		var score=0;
+		if(document.getElementById('correct1').checked)
+		{
+		     score++;
+		}
+		if(document.getElementById('correct2').checked)
+		{
+		     score++;
+		}
+		if(document.getElementById('correct3').checked)
+		{
+		     score++;
+		}
+		if(document.getElementById('correct4').checked)
+		{
+		     score++;
+		}
+		if(document.getElementById('correct5').checked)
+		{
+		     score++;
+		}
+		if(document.getElementById('correct6').checked)
+		{
+		     score++;
+		}
+		if(document.getElementById('correct7').checked)
+		{
+		     score++;
+		}
+		if(document.getElementById('correct8').checked)
+		{
+		     score++;
+		}
+		if(document.getElementById('correct9').checked)
+		{
+		     score++;
+		}
+		if(document.getElementById('correct10').checked)
+		{
+		     score++;
+		}
+		//document.write("Your score is: "+score+ "/5");
+		/*function afisare() {
+document.write("<h2>Your score i</h2>");*/
+window.alert("Scorul tău este: "+score+ "/10");
+
+	    }
+</script>
+</section>
+<br><br><br>
+
+
+
+</section>
+
+
+</body>
+
+</html>
